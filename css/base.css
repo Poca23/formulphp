@@ -1,0 +1,34 @@
+:root {
+  --fond: #f5f7fa;
+  --texte: #1f2933;
+  --principal: #2563eb;
+  --erreur-fond: #fdecec;
+  --erreur-bord: #b42318;
+  --succes-fond: #e7f6ec;
+  --succes-bord: #187a3b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--fond);
+  color: var(--texte);
+  line-height: 1.5;
+}
+
+header,
+main,
+footer {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+}
