@@ -1,0 +1,1 @@
+<output class="succes">Merci, votre message a bien été envoyé.</output>
