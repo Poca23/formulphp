@@ -8,6 +8,6 @@ function verifier(bool $condition, string $nom): void
         exit(1);
 }
 
-verifier(e('<script>') === '<script>', 'e() échappe le HTML');
+verifier(!str_contains(e('<script>'), '<'), 'e() échappe le HTML');
 verifier(nettoyer(['prenom' => '  Claire '])['prenom'] === 'Claire', 'nettoyer() retire les espaces');
 verifier(nettoyer([])['nom'] === '', 'nettoyer() gère un champ absent');
